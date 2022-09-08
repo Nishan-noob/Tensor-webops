@@ -23,16 +23,13 @@ function App() {
   },[]);
 
   return (
-    <div className="App" style={{padding:'10px'}}>
+    <div className="App">
       <h1>SOCIAL CARDS</h1>
-      {/* <div style={{display:'flex', justifyContent:'space-around'}}> */}
-
       <div className='cards-box'>
       {users.map((user,index)=>(
         <SocialCard userData={user} key={index}/>
-        ))}</div>
+      ))}</div>
     </div>
-        // </div>
   );
 }
 

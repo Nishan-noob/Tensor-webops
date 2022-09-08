@@ -1,92 +1,79 @@
 .cards-box{
     display: grid;
-    grid-template-columns: 0.33fr 0.33fr 0.33fr;
+    grid-template-columns:  0.333333333fr 0.333333333fr 0.333333333fr;
+    /* position: relative; */
+    
     
 }
 .App{
-    padding-left: 10rem;
+    /* margin: 0 auto; */
     padding-top: 3rem;
-    background:url(/src/image/qw.jpg) ;
-    
+    background-image:url(/src/image/qw.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     
 }
 
 h1{
-    position: relative;
-    padding-left: 25rem;
+    /* position: relative; */
+    text-align: center;
     font-family: 'ABeeZee';
     color: black;
 }
-@media only screen and (max-width: 400px){
-   .cards-box{
-    display: grid;
-    grid-template-columns: 1fr 0fr 0fr;
-   }
-   .App{
-    background:url(/src/image/qw.jpg) ;
-    background-size: contain;
-    padding: 3em;
-   }
-   h1{
-    padding-left: 10px;
-    padding-top: 13px;
-    position: relative;
-    font-family: 'ABeeZee';
-    color: black;
-   }
-}
-@media only screen and (max-width: 320px){
-    .cards-box{
-     display: grid;
-     grid-template-columns: 1fr;
-    }
-    .App{
-     background:url(/src/image/qw.jpg) ;
-     background-size: contain;
-     padding: 0.7em;
-    }
-    h1{
-     padding-left: 10px;
-     padding-top: 35px;
-     position: relative;
-     font-family: 'ABeeZee';
-     color: black;
-    }
- }
-@media only screen and (max-width: 425px){
-    .cards-box{
-     display: grid;
-     grid-template-columns: 0.3fr 0.3fr 0.3fr;
-    }
-    .App{
-     background:url(/src/image/qw.jpg) ;
-     background-size: contain;
-     padding: 3em;
-    }
-    h1{
-     padding-left: 20px;
-     padding-top: 3px;
-     position: relative;
-     font-family: 'ABeeZee';
-     color: black;
-    }
- }
 
- @media only screen and (max-width: 768px){
+@media only screen and (max-width: 940px) {
     .cards-box{
-     display: grid;
-     grid-template-columns: 0.4fr 0.6fr;
+        display: grid;
+        grid-template-columns:  0.5fr 0.5fr ;
+        /* position: relative; */
+        
+        
     }
     .App{
-     background:url(/src/image/qw.jpg) ;
-     background-size: contain;
-     padding: 15px;
+        /* margin: 0 auto; */
+        padding-top: 3rem;
+        background-image:url(/src/image/qw.jpg) ;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        
     }
     h1{
-     padding-left: 20px;
-     padding-top: 13px;
-     position: relative;
-     font-family: 'ABeeZee';
-     color: black;
+        /* position: relative; */
+        
+        text-align: center;
+        font-family: 'ABeeZee';
+        color: black;
     }
- }
+    
+  }
+
+  @media only screen and (max-width: 640px) {
+    h1{
+        /* position: relative; */
+        text-align: center;
+        font-family: 'ABeeZee';
+        color: black;
+    }
+    .App{
+        /* margin: 0 auto; */
+        padding-top: 3rem;
+        background-image:url(/src/image/qw.jpg) ;
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+        background-attachment: fixed;
+        background-position: center;
+        
+    }
+    .cards-box{
+        display: grid;
+        grid-template-columns:  1fr;
+        /* position: relative; */
+        
+        
+    }
+    
+  }
